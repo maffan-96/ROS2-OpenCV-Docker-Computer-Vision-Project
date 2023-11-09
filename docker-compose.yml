@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  video_capture_resize_process_service:
+    image: my-app:latest
+    build: .
+    privileged: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    devices:
+      - "/dev/video0: /dev/video0"
+      - "/dev/video1: /dev/video1"
+    network_mode: host
