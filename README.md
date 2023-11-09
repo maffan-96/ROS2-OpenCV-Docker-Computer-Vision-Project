@@ -9,7 +9,7 @@ A Dockerized environment is created that encapsulates the following functionalit
 4. DockerFile: A docker is used to ensure a reproducible deployment environment, encapsulating the entire computer vision pipeline. This approach promotes ease of collaboration, scalability, and consistency across different environments. Additionally, a docker-compose is additionally used to provide use of usage 
 
 ## How to use it
-Run ```git clone https://github.com/maffan-96/ROS2-OpenCV-Docker-Computer-Vision-Project``` (assuming _git_ is already installed on your system). If not directly download the repo or install _git_ first. Now run as per your preferences from the following options specified.
+Run ```git clone https://github.com/maffan-96/ROS2-OpenCV-Docker-Computer-Vision-Project.git``` (assuming _git_ is already installed on your system). If not directly download the repo or install _git_ first. Now run as per your preferences from the following options specified.
    
  ### Run directly with Python (without ROS, Docker, and Bash Script)
  Navigate to the folder _ROS2-OpenCV-Docker-Computer-Vision-Project_ and run ```python3 openCV_video_capture.py```. Here, the following details are assumed
