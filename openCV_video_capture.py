@@ -38,7 +38,7 @@ while True:
     cv2.putText(frame, f'FPS: {fps:.2f}', (10, 30), font, font_scale, font_color, 1)
 
     # Display the original and grayscale frames
-    cv2.imshow(window_name, frame)
+    cv2.imshow(window_name, gray_frame)
 
     # Break the loop when the 'q' key is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
