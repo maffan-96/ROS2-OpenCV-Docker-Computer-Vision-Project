@@ -26,10 +26,8 @@ while True:
     if not ret:
         print("Error: Could not read a frame.")
         break
-    print(frame.shape)
     # Resize the frame to 300x300
     frame = cv2.resize(frame, (300, 300))
-    print(frame.shape)
     # Convert the frame to grayscale
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
