@@ -31,9 +31,9 @@ A Dockerized environment is created that encapsulates the following functionalit
 2. **Run via Bash Script or/and ROS (without Docker):**
    - Source ROS2: Foxy via `source /opt/ros/foxy/setup.bash` (assuming ros2:foxy is installed).
    - Navigate to the folder _ROS2-OpenCV-Docker-Computer-Vision-Project_.
-   - Run `colcon build` (assuming all the necessary ros2:foxy packages and OpenCV are installed).
+   - Enter command `colcon build` (assuming all the necessary ros2:foxy packages and OpenCV are installed).
    - Source local ros packages `source install/setup.bash`.
-   - Run `bash check_camera.py` or directly run via ROS2 via the command `ros2 launch video_capture image_processing.launch.py` (_video_capture_ is the name of the package).
+   - Enter command `bash check_camera.sh` or directly run via ROS2 using the command `ros2 launch video_capture image_processing.launch.py` (_video_capture_ is the name of the package).
 
 3. **Run via Docker:**
    - Ensure that `docker` and `docker-compose` are installed. If not, install them first (Docker version used: 24.0.6).
@@ -41,7 +41,7 @@ A Dockerized environment is created that encapsulates the following functionalit
    - Run `docker-compose build`.
    - After a successful build, go to another terminal and type `xhost +local:root`.
    - Run `docker-compose up`.
-   - Open rviz2 visualizer to view the topics:
+   - An rviz2 visualizer will open, and the following topics could be viewed by selection:
       - `input_image_topic` (original video frames),
       - `output_image_topic` (resized video frames),
       - `processed_image_topic` (grayscale processed video frames).
