@@ -33,7 +33,7 @@ A Dockerized environment is created that encapsulates the following functionalit
    - Navigate to the folder _ROS2-OpenCV-Docker-Computer-Vision-Project_.
    - Enter command `colcon build` (assuming all the necessary ros2:foxy packages and OpenCV are installed).
    - Source local ros packages `source install/setup.bash`.
-   - Enter command `bash check_camera.sh` or directly run via ROS2 using the command `ros2 launch video_capture image_processing.launch.py` (_video_capture_ is the name of the package).
+   - Enter command `bash check_camera.sh video_capture image_processing.launch.py` or directly run via ROS2 using the command `ros2 launch video_capture image_processing.launch.py` (_video_capture_ is the name of the package and _image_processing.launch.py_ is a name of the launch file).
 
 3. **Run via Docker:**
    - Ensure that `docker` and `docker-compose` are installed. If not, install them first (Docker version used: 24.0.6).
